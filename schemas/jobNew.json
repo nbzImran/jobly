@@ -1,0 +1,30 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "description": "The job title"
+      },
+      "salary": {
+        "type": "number",
+        "minimum": 0,
+        "description": "The salary for the job"
+      },
+      "equity": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "The equity percentage (0 to 1)"
+      },
+      "company_handle": {
+        "type": "string",
+        "minLength": 1,
+        "description": "The handle of the company offering the job"
+      }
+    },
+    "required": ["title", "salary", "company_handle"],
+    "additionalProperties": false
+  }
+  

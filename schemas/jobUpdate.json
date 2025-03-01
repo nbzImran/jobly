@@ -1,0 +1,24 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema#",
+    "type": "object",
+    "properties": {
+      "title": {
+        "type": "string",
+        "minLength": 1,
+        "description": "The updated job title"
+      },
+      "salary": {
+        "type": "number",
+        "minimum": 0,
+        "description": "The updated salary for the job"
+      },
+      "equity": {
+        "type": "number",
+        "minimum": 0,
+        "maximum": 1,
+        "description": "The updated equity percentage (0 to 1)"
+      }
+    },
+    "additionalProperties": false
+  }
+  
